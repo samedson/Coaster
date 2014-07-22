@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF650D97197DE45A00B55E55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF650D96197DE45A00B55E55 /* Foundation.framework */; };
+		DF650D99197DE45A00B55E55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF650D98197DE45A00B55E55 /* CoreGraphics.framework */; };
+		DF650D9B197DE45A00B55E55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF650D9A197DE45A00B55E55 /* UIKit.framework */; };
+		DF650DA1197DE45A00B55E55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF650D9F197DE45A00B55E55 /* InfoPlist.strings */; };
+		DF650DA3197DE45A00B55E55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF650DA2197DE45A00B55E55 /* main.m */; };
+		DF650DA7197DE45A00B55E55 /* CoasterAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF650DA6197DE45A00B55E55 /* CoasterAppDelegate.m */; };
+		DF650DA9197DE45A00B55E55 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF650DA8197DE45A00B55E55 /* Images.xcassets */; };
+		DF650DB0197DE45A00B55E55 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF650DAF197DE45A00B55E55 /* XCTest.framework */; };
+		DF650DB1197DE45A00B55E55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF650D96197DE45A00B55E55 /* Foundation.framework */; };
+		DF650DB2197DE45A00B55E55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF650D9A197DE45A00B55E55 /* UIKit.framework */; };
+		DF650DBA197DE45A00B55E55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF650DB8197DE45A00B55E55 /* InfoPlist.strings */; };
+		DF650DBC197DE45A00B55E55 /* CoasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF650DBB197DE45A00B55E55 /* CoasterTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF650DB3197DE45A00B55E55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF650D8B197DE45A00B55E55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF650D92197DE45A00B55E55;
+			remoteInfo = Coaster;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF650D93197DE45A00B55E55 /* Coaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF650D96197DE45A00B55E55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DF650D98197DE45A00B55E55 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DF650D9A197DE45A00B55E55 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DF650D9E197DE45A00B55E55 /* Coaster-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Coaster-Info.plist"; sourceTree = "<group>"; };
+		DF650DA0197DE45A00B55E55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DF650DA2197DE45A00B55E55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DF650DA4197DE45A00B55E55 /* Coaster-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Coaster-Prefix.pch"; sourceTree = "<group>"; };
+		DF650DA5197DE45A00B55E55 /* CoasterAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoasterAppDelegate.h; sourceTree = "<group>"; };
+		DF650DA6197DE45A00B55E55 /* CoasterAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoasterAppDelegate.m; sourceTree = "<group>"; };
+		DF650DA8197DE45A00B55E55 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DF650DAE197DE45A00B55E55 /* CoasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF650DAF197DE45A00B55E55 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DF650DB7197DE45A00B55E55 /* CoasterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoasterTests-Info.plist"; sourceTree = "<group>"; };
+		DF650DB9197DE45A00B55E55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DF650DBB197DE45A00B55E55 /* CoasterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoasterTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF650D90197DE45A00B55E55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF650D99197DE45A00B55E55 /* CoreGraphics.framework in Frameworks */,
+				DF650D9B197DE45A00B55E55 /* UIKit.framework in Frameworks */,
+				DF650D97197DE45A00B55E55 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF650DAB197DE45A00B55E55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF650DB0197DE45A00B55E55 /* XCTest.framework in Frameworks */,
+				DF650DB2197DE45A00B55E55 /* UIKit.framework in Frameworks */,
+				DF650DB1197DE45A00B55E55 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF650D8A197DE45A00B55E55 = {
+			isa = PBXGroup;
+			children = (
+				DF650D9C197DE45A00B55E55 /* Coaster */,
+				DF650DB5197DE45A00B55E55 /* CoasterTests */,
+				DF650D95197DE45A00B55E55 /* Frameworks */,
+				DF650D94197DE45A00B55E55 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF650D94197DE45A00B55E55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF650D93197DE45A00B55E55 /* Coaster.app */,
+				DF650DAE197DE45A00B55E55 /* CoasterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF650D95197DE45A00B55E55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF650D96197DE45A00B55E55 /* Foundation.framework */,
+				DF650D98197DE45A00B55E55 /* CoreGraphics.framework */,
+				DF650D9A197DE45A00B55E55 /* UIKit.framework */,
+				DF650DAF197DE45A00B55E55 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF650D9C197DE45A00B55E55 /* Coaster */ = {
+			isa = PBXGroup;
+			children = (
+				DF650DA5197DE45A00B55E55 /* CoasterAppDelegate.h */,
+				DF650DA6197DE45A00B55E55 /* CoasterAppDelegate.m */,
+				DF650DA8197DE45A00B55E55 /* Images.xcassets */,
+				DF650D9D197DE45A00B55E55 /* Supporting Files */,
+			);
+			path = Coaster;
+			sourceTree = "<group>";
+		};
+		DF650D9D197DE45A00B55E55 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF650D9E197DE45A00B55E55 /* Coaster-Info.plist */,
+				DF650D9F197DE45A00B55E55 /* InfoPlist.strings */,
+				DF650DA2197DE45A00B55E55 /* main.m */,
+				DF650DA4197DE45A00B55E55 /* Coaster-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF650DB5197DE45A00B55E55 /* CoasterTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF650DBB197DE45A00B55E55 /* CoasterTests.m */,
+				DF650DB6197DE45A00B55E55 /* Supporting Files */,
+			);
+			path = CoasterTests;
+			sourceTree = "<group>";
+		};
+		DF650DB6197DE45A00B55E55 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF650DB7197DE45A00B55E55 /* CoasterTests-Info.plist */,
+				DF650DB8197DE45A00B55E55 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF650D92197DE45A00B55E55 /* Coaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF650DBF197DE45A00B55E55 /* Build configuration list for PBXNativeTarget "Coaster" */;
+			buildPhases = (
+				DF650D8F197DE45A00B55E55 /* Sources */,
+				DF650D90197DE45A00B55E55 /* Frameworks */,
+				DF650D91197DE45A00B55E55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Coaster;
+			productName = Coaster;
+			productReference = DF650D93197DE45A00B55E55 /* Coaster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF650DAD197DE45A00B55E55 /* CoasterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF650DC2197DE45A00B55E55 /* Build configuration list for PBXNativeTarget "CoasterTests" */;
+			buildPhases = (
+				DF650DAA197DE45A00B55E55 /* Sources */,
+				DF650DAB197DE45A00B55E55 /* Frameworks */,
+				DF650DAC197DE45A00B55E55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF650DB4197DE45A00B55E55 /* PBXTargetDependency */,
+			);
+			name = CoasterTests;
+			productName = CoasterTests;
+			productReference = DF650DAE197DE45A00B55E55 /* CoasterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF650D8B197DE45A00B55E55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Coaster;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = sam;
+				TargetAttributes = {
+					DF650DAD197DE45A00B55E55 = {
+						TestTargetID = DF650D92197DE45A00B55E55;
+					};
+				};
+			};
+			buildConfigurationList = DF650D8E197DE45A00B55E55 /* Build configuration list for PBXProject "Coaster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DF650D8A197DE45A00B55E55;
+			productRefGroup = DF650D94197DE45A00B55E55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF650D92197DE45A00B55E55 /* Coaster */,
+				DF650DAD197DE45A00B55E55 /* CoasterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF650D91197DE45A00B55E55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF650DA1197DE45A00B55E55 /* InfoPlist.strings in Resources */,
+				DF650DA9197DE45A00B55E55 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF650DAC197DE45A00B55E55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF650DBA197DE45A00B55E55 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF650D8F197DE45A00B55E55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF650DA7197DE45A00B55E55 /* CoasterAppDelegate.m in Sources */,
+				DF650DA3197DE45A00B55E55 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF650DAA197DE45A00B55E55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF650DBC197DE45A00B55E55 /* CoasterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF650DB4197DE45A00B55E55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF650D92197DE45A00B55E55 /* Coaster */;
+			targetProxy = DF650DB3197DE45A00B55E55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DF650D9F197DE45A00B55E55 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF650DA0197DE45A00B55E55 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DF650DB8197DE45A00B55E55 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF650DB9197DE45A00B55E55 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF650DBD197DE45A00B55E55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DF650DBE197DE45A00B55E55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF650DC0197DE45A00B55E55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Coaster/Coaster-Prefix.pch";
+				INFOPLIST_FILE = "Coaster/Coaster-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DF650DC1197DE45A00B55E55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Coaster/Coaster-Prefix.pch";
+				INFOPLIST_FILE = "Coaster/Coaster-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DF650DC3197DE45A00B55E55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Coaster.app/Coaster";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Coaster/Coaster-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CoasterTests/CoasterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DF650DC4197DE45A00B55E55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Coaster.app/Coaster";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Coaster/Coaster-Prefix.pch";
+				INFOPLIST_FILE = "CoasterTests/CoasterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF650D8E197DE45A00B55E55 /* Build configuration list for PBXProject "Coaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF650DBD197DE45A00B55E55 /* Debug */,
+				DF650DBE197DE45A00B55E55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF650DBF197DE45A00B55E55 /* Build configuration list for PBXNativeTarget "Coaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF650DC0197DE45A00B55E55 /* Debug */,
+				DF650DC1197DE45A00B55E55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DF650DC2197DE45A00B55E55 /* Build configuration list for PBXNativeTarget "CoasterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF650DC3197DE45A00B55E55 /* Debug */,
+				DF650DC4197DE45A00B55E55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF650D8B197DE45A00B55E55 /* Project object */;
+}
