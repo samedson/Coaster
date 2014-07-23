@@ -23,10 +23,18 @@
   if ( ! self) { return nil; }
 
   self.layer.cornerRadius = radius;
-  self.backgroundColor = [UIColor colorWithRed:0.5 green:0.5 blue:1 alpha:0.3];
+  self.backgroundColor = [UIColor colorWithRed:0.5 green:0.5 blue:1 alpha:1];
   self.yOriginal = frame.origin.y;
+  [self addTarget:self action:@selector(handleTap) forControlEvents:UIControlEventTouchUpInside];
   
   return self;
+}
+
+- (void)handleTap {
+  self.backgroundColor = [UIColor colorWithRed:1 green:0.5 blue:1 alpha:1];
+  [UIView animateWithDuration:3 animations:^(void){
+    self.backgroundColor = [UIColor colorWithRed:0.5 green:0.5 blue:1 alpha:1];
+  }];
 }
 
 @end

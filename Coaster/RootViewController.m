@@ -21,7 +21,13 @@
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
   if ( ! self) { return nil; }
   
+  CGRect topBarFrame = CGRectMake(0, 0, self.view.frame.size.width, 24);
+  UIView *topBar = [[UIView alloc] initWithFrame:topBarFrame];
+//  topBar.backgroundColor = [UIColor colorWithRed:0.2 green:0.5 blue:1 alpha:1];
+  topBar.backgroundColor = [UIColor whiteColor];
+
   [self.view addSubview:[[TrailView alloc] initWithFrame:self.view.frame]];
+  [self.view addSubview:topBar];
   
   return self;
 }

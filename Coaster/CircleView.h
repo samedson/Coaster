@@ -16,7 +16,7 @@ enum CircleViewTrailMode {
   CircleViewTrailModeRight = 5,
 };
 
-@interface CircleView : UIView
+@interface CircleView : UIButton
 
 - (id)initWithCenter:(CGPoint)center
               radius:(CGFloat)radius;

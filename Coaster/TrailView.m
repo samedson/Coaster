@@ -8,25 +8,32 @@
 
 #import "TrailView.h"
 
+#import "CenterView.h"
 #import "CircleView.h"
 
 #import "CGUtil.h"
 
+#define printlog if (false)
+
+// Cells
 static const CGFloat kCellRadius = 24;
 static const CGFloat kLeftOffset = -92;
 static const CGFloat kRightOffset = 800;
 static const NSInteger kCellsPerPage = 26;
 static const NSInteger kNumberOfCells = kCellsPerPage + 2;
 static const NSInteger kPageSize = (2 * kCellRadius * kNumberOfCells - 3);
-static const NSInteger kContentSize = 500 * kPageSize;
+static const NSInteger kContentSize = 5000 * kPageSize;
 
 // Deciding which mode
 static const NSInteger kModeCutoffLeft_RightY = 0;
 static const NSInteger kModeCutoffBottomLeft_LeftY = 570;
 static const NSInteger kModeCutoffBottomLeft_BottomX = 20;
-static const NSInteger kModeCutoffBottomRight_BottomX = 240;
-static const NSInteger kModeCutoffBottomRight_Right = 820;
+static const NSInteger kModeCutoffBottomRight_BottomX = 232;
+static const NSInteger kModeCutoffBottomRight_RightY = 840;
 static const NSInteger kModeCutoffRight_LeftY = 1400;
+
+// ScrollView Properties
+static const CGFloat kScrollViewDecelerationRate = 0.8;
 
 @interface TrailView() <UIScrollViewDelegate>
 
@@ -58,6 +65,7 @@ static const NSInteger kModeCutoffRight_LeftY = 1400;
     self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectOffset(frame, 0, 24)];
     self.scrollView.delegate = self;
     self.scrollView.showsVerticalScrollIndicator = false;
+    self.scrollView.decelerationRate = kScrollViewDecelerationRate;
     self.scrollView.contentSize = CGSizeMake(2 * kCellRadius,
                                              kContentSize + frame.size.height);
   }
@@ -70,6 +78,7 @@ static const NSInteger kModeCutoffRight_LeftY = 1400;
     self.bottomScrollView = [[UIScrollView alloc] initWithFrame:bottomFrame];
     self.bottomScrollView.delegate = self;
     self.bottomScrollView.showsHorizontalScrollIndicator = false;
+    self.bottomScrollView.decelerationRate = kScrollViewDecelerationRate;
     self.bottomScrollView.contentSize = CGSizeMake(kContentSize + frame.size.width,
                                                    2 * kCellRadius);
   }
@@ -82,6 +91,7 @@ static const NSInteger kModeCutoffRight_LeftY = 1400;
     self.rightScrollView = [[UIScrollView alloc] initWithFrame:rightFrame];
     self.rightScrollView.delegate = self;
     self.rightScrollView.showsVerticalScrollIndicator = false;
+    self.rightScrollView.decelerationRate = kScrollViewDecelerationRate;
     self.rightScrollView.contentSize = CGSizeMake(2 * kCellRadius,
                                                   kContentSize + frame.size.height);
   }
@@ -90,8 +100,7 @@ static const NSInteger kModeCutoffRight_LeftY = 1400;
                                   0,
                                   frame.size.width - 4 * kCellRadius,
                                   frame.size.height - 2 * kCellRadius);
-  UIView *centerView = [[UIView alloc] initWithFrame:centerFrame];
-  centerView.backgroundColor = [UIColor whiteColor];
+  UIView *centerView = [[CenterView alloc] initWithFrame:centerFrame];
 
   for (int i = 0; i < number; i++) {
     CGPoint center = CGPointMake(kCellRadius, (2 * kCellRadius) * i + kCellRadius - kLeftOffset);
@@ -101,13 +110,15 @@ static const NSInteger kModeCutoffRight_LeftY = 1400;
     [self.scrollView addSubview:circleView];
   }
 
-  [self addSubview:centerView];
   [self addSubview:self.scrollView];
   [self addSubview:self.rightScrollView];
   [self addSubview:self.bottomScrollView];
+  [self addSubview:centerView];
   
-  [self setCircleViewTrailModes];
   self.ctrlScrollView = self.scrollView;
+  self.ctrlScrollView.contentOffset = CGPointMake(0, 300);
+  [self setCircleViewTrailModes];
+  [self scrollViewDidScroll:self.scrollView];
   [self scrollViewDidScroll:self.scrollView];
   
   return self;
@@ -175,7 +186,7 @@ static const NSInteger kModeCutoffRight_LeftY = 1400;
   }
 }
 
-- (CircleView *)classifyCircleAt:(int)index
+- (bool)classifyCircleAt:(int)index
                          yScroll:(CGFloat)yScroll
                   previousCircle:(CircleView *)prevCircle {
   CircleView *circle = self.circleViews[index];
@@ -212,14 +223,12 @@ static const NSInteger kModeCutoffRight_LeftY = 1400;
     case CircleViewTrailModeBottomRight:
       if (xCurrent < kModeCutoffBottomRight_BottomX) { // Left bottom right -> bottom
         circle.circleViewTrailMode = CircleViewTrailModeBottom;
-      } else if (yScreen > kModeCutoffBottomRight_Right) { // High bottom right -+ right
-        circle.circleViewTrailMode = CircleViewTrailModeRight;
-      } else if (xCurrent > 2 * kCellRadius) {
+      } else if (yScreen > kModeCutoffBottomRight_RightY) { // High bottom right -+ right
         circle.circleViewTrailMode = CircleViewTrailModeRight;
       }
       break;
     case CircleViewTrailModeRight:
-      if (yScreen < kModeCutoffBottomRight_Right) { // Low right -> bottom right
+      if (yScreen < kModeCutoffBottomRight_RightY) { // Low right -> bottom right
         circle.circleViewTrailMode = CircleViewTrailModeBottomRight;
       } else if (yScreen > kModeCutoffRight_LeftY) { // High right -> left
         circle.circleViewTrailMode = CircleViewTrailModeLeft;
@@ -230,9 +239,11 @@ static const NSInteger kModeCutoffRight_LeftY = 1400;
       break;
   }
   if (prevMode != circle.circleViewTrailMode) {
-    NSLog(@"%i -> %i", prevMode, circle.circleViewTrailMode);
+    printlog NSLog(@"%i -> %i", prevMode, circle.circleViewTrailMode);
+    return true;
+  } else {
+    return false;
   }
-  return circle;
 }
 
 - (void)positionCircle:(CircleView *)circle
@@ -244,41 +255,37 @@ static const NSInteger kModeCutoffRight_LeftY = 1400;
   CGFloat yCircle = circle.yOriginal;
   CGFloat yMax = self.frame.size.height - 3 * kCellRadius;
   CGFloat xRight = self.frame.size.width - 2 * kCellRadius;
-  
-  int nextIndex = [self getNextIndex:index];
-  CGPoint nextOrigin = ((CircleView *)self.circleViews[nextIndex]).frame.origin;
-  CGPoint prevOrigin = prevCircle.frame.origin;
 
   switch (circle.circleViewTrailMode) {
     case CircleViewTrailModeLeft:
       circle.frame = CGRectMove(circleFrame,
                                 0,
                                 yCircle + kLeftOffset);
-      circle.backgroundColor = [UIColor colorWithRed:0 green:1 blue:0 alpha:0.5];
+//      circle.backgroundColor = [UIColor colorWithRed:0 green:1 blue:0 alpha:0.5];
       break;
     case CircleViewTrailModeBottomLeft:
       circle.frame = CGRectMove(circleFrame,
-                                nextOrigin.x - 2 * kCellRadius,
+                                -1 * yScroll + (yCircle - self.frame.size.height),
                                 yCircle + kLeftOffset);
-      circle.backgroundColor = [UIColor colorWithRed:1 green:0 blue:1 alpha:0.5];
+//      circle.backgroundColor = [UIColor colorWithRed:1 green:0 blue:1 alpha:0.5];
       break;
     case CircleViewTrailModeBottom:
       circle.frame = CGRectMove(circleFrame,
                                 -1 * yScroll + (yCircle - self.frame.size.height),
                                 yMax + yScroll);
-      circle.backgroundColor = [UIColor colorWithRed:1 green:0 blue:0 alpha:0.5];
+//      circle.backgroundColor = [UIColor colorWithRed:1 green:0 blue:0 alpha:0.5];
       break;
     case CircleViewTrailModeBottomRight:
       circle.frame = CGRectMove(circleFrame,
-                                prevOrigin.x + 2 * kCellRadius,
+                                -1 * yScroll + (yCircle - self.frame.size.height),
                                 2 * yScroll + (yMax - yCircle) + kRightOffset);
-      circle.backgroundColor = [UIColor colorWithRed:0 green:1 blue:1 alpha:0.5];
+//      circle.backgroundColor = [UIColor colorWithRed:0 green:1 blue:1 alpha:0.5];
       break;
     case CircleViewTrailModeRight:
       circle.frame = CGRectMove(circleFrame,
                                 xRight,
                                 2 * yScroll + (yMax - yCircle) + kRightOffset);
-      circle.backgroundColor = [UIColor colorWithRed:0 green:0 blue:1 alpha:0.5];
+//      circle.backgroundColor = [UIColor colorWithRed:0 green:0 blue:1 alpha:0.5];
       break;
     default:
       break;
@@ -293,21 +300,43 @@ static const NSInteger kModeCutoffRight_LeftY = 1400;
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
   if (scrollView == self.scrollView) {
-    CGFloat yScroll = scrollView.contentOffset.y;
     CGFloat speed = [self getScrollSpeed];
+    CGFloat yScroll = scrollView.contentOffset.y;
     CircleView *previous = self.circleViews.lastObject;
     CircleView *current;
     for (int i = 0; i < kNumberOfCells; i++) {
-      current = [self classifyCircleAt:i
-                                yScroll:yScroll
-                         previousCircle:previous];
+      current = self.circleViews[i];
+      bool changed = [self classifyCircleAt:i
+                                    yScroll:yScroll
+                             previousCircle:previous];
       [self positionCircle:current
                    atIndex:i
                    yScroll:yScroll
                      speed:speed
             previousCircle:previous];
+      if (changed) {
+        if ([self classifyCircleAt:i
+                           yScroll:yScroll
+                    previousCircle:previous]) {
+          [self positionCircle:current
+                       atIndex:i
+                       yScroll:yScroll
+                         speed:speed
+                previousCircle:previous];
+          if ([self classifyCircleAt:i
+                             yScroll:yScroll
+                      previousCircle:previous]) {
+            [self positionCircle:current
+                         atIndex:i
+                         yScroll:yScroll
+                           speed:speed
+                  previousCircle:previous];
+          }
+        }
+      }
       previous = current;
     }
+    printlog NSLog(@"speed: %f", speed);
   }
   [self synchronizeScrollViews];
 }
