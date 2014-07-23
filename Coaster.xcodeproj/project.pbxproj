@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF556597197DE53E007E6F5F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF556596197DE53D007E6F5F /* RootViewController.m */; };
+		DF55659A197DE619007E6F5F /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF556599197DE619007E6F5F /* CircleView.m */; };
+		DF55659D197DE627007E6F5F /* TrailView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF55659C197DE627007E6F5F /* TrailView.m */; };
 		DF650D97197DE45A00B55E55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF650D96197DE45A00B55E55 /* Foundation.framework */; };
 		DF650D99197DE45A00B55E55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF650D98197DE45A00B55E55 /* CoreGraphics.framework */; };
 		DF650D9B197DE45A00B55E55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF650D9A197DE45A00B55E55 /* UIKit.framework */; };
@@ -19,6 +22,7 @@
 		DF650DB2197DE45A00B55E55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF650D9A197DE45A00B55E55 /* UIKit.framework */; };
 		DF650DBA197DE45A00B55E55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF650DB8197DE45A00B55E55 /* InfoPlist.strings */; };
 		DF650DBC197DE45A00B55E55 /* CoasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF650DBB197DE45A00B55E55 /* CoasterTests.m */; };
+		DFAEA314197F46D5003FA439 /* CGUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = DFAEA313197F46D5003FA439 /* CGUtil.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF556595197DE53D007E6F5F /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		DF556596197DE53D007E6F5F /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		DF556598197DE619007E6F5F /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
+		DF556599197DE619007E6F5F /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
+		DF55659B197DE627007E6F5F /* TrailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrailView.h; sourceTree = "<group>"; };
+		DF55659C197DE627007E6F5F /* TrailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrailView.m; sourceTree = "<group>"; };
 		DF650D93197DE45A00B55E55 /* Coaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF650D96197DE45A00B55E55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DF650D98197DE45A00B55E55 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +58,8 @@
 		DF650DB7197DE45A00B55E55 /* CoasterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoasterTests-Info.plist"; sourceTree = "<group>"; };
 		DF650DB9197DE45A00B55E55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DF650DBB197DE45A00B55E55 /* CoasterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoasterTests.m; sourceTree = "<group>"; };
+		DFAEA312197F46D5003FA439 /* CGUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGUtil.h; path = Coaster/CGUtil.h; sourceTree = "<group>"; };
+		DFAEA313197F46D5003FA439 /* CGUtil.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CGUtil.mm; path = Coaster/CGUtil.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,10 +86,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF55659E197DE639007E6F5F /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				DF556598197DE619007E6F5F /* CircleView.h */,
+				DF55659B197DE627007E6F5F /* TrailView.h */,
+			);
+			name = Headers;
+			path = Coaster;
+			sourceTree = "<group>";
+		};
 		DF650D8A197DE45A00B55E55 = {
 			isa = PBXGroup;
 			children = (
 				DF650D9C197DE45A00B55E55 /* Coaster */,
+				DFA0F265197DE4A100E6B2E6 /* Objects */,
+				DFA0F264197DE49A00E6B2E6 /* Views */,
+				DF55659E197DE639007E6F5F /* Headers */,
+				DFAEA311197F46AE003FA439 /* Util */,
 				DF650DB5197DE45A00B55E55 /* CoasterTests */,
 				DF650D95197DE45A00B55E55 /* Frameworks */,
 				DF650D94197DE45A00B55E55 /* Products */,
@@ -109,6 +135,8 @@
 			children = (
 				DF650DA5197DE45A00B55E55 /* CoasterAppDelegate.h */,
 				DF650DA6197DE45A00B55E55 /* CoasterAppDelegate.m */,
+				DF556595197DE53D007E6F5F /* RootViewController.h */,
+				DF556596197DE53D007E6F5F /* RootViewController.m */,
 				DF650DA8197DE45A00B55E55 /* Images.xcassets */,
 				DF650D9D197DE45A00B55E55 /* Supporting Files */,
 			);
@@ -142,6 +170,32 @@
 				DF650DB8197DE45A00B55E55 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFA0F264197DE49A00E6B2E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DF556599197DE619007E6F5F /* CircleView.m */,
+				DF55659C197DE627007E6F5F /* TrailView.m */,
+			);
+			name = Views;
+			path = Coaster;
+			sourceTree = "<group>";
+		};
+		DFA0F265197DE4A100E6B2E6 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		DFAEA311197F46AE003FA439 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				DFAEA312197F46D5003FA439 /* CGUtil.h */,
+				DFAEA313197F46D5003FA439 /* CGUtil.mm */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,8 +294,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF55659A197DE619007E6F5F /* CircleView.m in Sources */,
 				DF650DA7197DE45A00B55E55 /* CoasterAppDelegate.m in Sources */,
 				DF650DA3197DE45A00B55E55 /* main.m in Sources */,
+				DF55659D197DE627007E6F5F /* TrailView.m in Sources */,
+				DF556597197DE53E007E6F5F /* RootViewController.m in Sources */,
+				DFAEA314197F46D5003FA439 /* CGUtil.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,10 +416,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Coaster/Coaster-Prefix.pch";
 				INFOPLIST_FILE = "Coaster/Coaster-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -371,9 +432,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Coaster/Coaster-Prefix.pch";
 				INFOPLIST_FILE = "Coaster/Coaster-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -438,6 +501,7 @@
 				DF650DC1197DE45A00B55E55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF650DC2197DE45A00B55E55 /* Build configuration list for PBXNativeTarget "CoasterTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +510,7 @@
 				DF650DC4197DE45A00B55E55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
