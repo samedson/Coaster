@@ -38,6 +38,7 @@
 static const CGFloat kLeftOffset = -92;
 static const CGFloat kRightOffset = 800;
 static const CGFloat kWeirdCircleSizeShift = kCellRadius - 20;
+static const CGFloat kCellStartOffset = kContentSize / 2;
 
 // ScrollView Properties
 static const CGFloat kScrollViewDecelerationRate = UIScrollViewDecelerationRateFast;
@@ -134,7 +135,8 @@ static const CGFloat kCornerButtonSize = 2 * kCellRadius;
   }
 
   for (int i = 0; i < kNumberOfCells; i++) {
-    CGPoint center = CGPointMake(kCellRadius, (2 * kCellRadius) * i + kCellRadius - kLeftOffset);
+    CGPoint center = CGPointMake(kCellRadius,
+                                 (2 * kCellRadius) * i + kCellRadius - kLeftOffset + kCellStartOffset);
     CircleView *circleView = [[CircleView alloc] initWithCenter:center
                                                          radius:kCellRadius
                                                          parent:self];
@@ -171,13 +173,13 @@ static const CGFloat kCornerButtonSize = 2 * kCellRadius;
   [self addSubview:self.centerView];
   
   self.ctrlScrollView = self.scrollView;
-  self.ctrlScrollView.contentOffset = CGPointMake(0, 300);
+  self.ctrlScrollView.contentOffset = CGPointMake(0, kCellStartOffset + 300);
   [self setCircleViewTrailModes];
-//  [self scrollViewDidScroll:self.scrollView];
-//  [self scrollViewDidScroll:self.scrollView];
-//  [self scrollViewDidScroll:self.scrollView];
-//  [self scrollViewDidScroll:self.scrollView];
-//  [self scrollViewDidScroll:self.scrollView];
+  [self scrollViewDidScroll:self.scrollView];
+  [self scrollViewDidScroll:self.scrollView];
+  [self scrollViewDidScroll:self.scrollView];
+  [self scrollViewDidScroll:self.scrollView];
+  [self scrollViewDidScroll:self.scrollView];
 
   [self reloadColors];
   

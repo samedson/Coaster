@@ -14,7 +14,7 @@ static const CGFloat kCellRadius = 26;
 static const NSInteger kCellsPerPage = 26;
 static const NSInteger kNumberOfCells = kCellsPerPage + 2;
 static const NSInteger kPageSize = (2 * kCellRadius * kNumberOfCells - 3);
-static const NSInteger kContentSize = 5000 * kPageSize;
+static const NSInteger kContentSize = LONG_MAX / 10000; // 922,337,203,685,477
 
 // Deciding which mode
 static const NSInteger kModeCutoffLeft_RightY = 0;
