@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+#import "User.h"
+
+// -----------------------------------------------------------------------------
+
 @interface CenterView : UIView
 
 - (id)initWithFrame:(CGRect)frame;
+
+- (void)reloadColors;
+
+- (void)loadUser:(User *)user;
 
 @end

@@ -10,10 +10,14 @@
 
 #import "RootViewController.h"
 
+#include "UserList.h"
+
 @implementation CoasterAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  globalUserList = new UserList();
+  
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   // Override point for customization after application launch.
   self.window.backgroundColor = [UIColor whiteColor];

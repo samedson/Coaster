@@ -1,0 +1,11 @@
+//
+//  project_internal.xcconfig
+//  Coaster
+//
+//  Created by Samuel Edson on 8/2/14.
+//  Copyright (c) 2014 sam. All rights reserved.
+//
+
+#include "project_base.xcconfig"
+
+GCC_PREPROCESSOR_DEFINITIONS = COASTER_INTERNAL $(inherited)

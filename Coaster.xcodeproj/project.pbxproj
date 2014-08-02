@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF46F09B198884DC0015269A /* UserList.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF46F09A198884DC0015269A /* UserList.mm */; };
 		DF556597197DE53E007E6F5F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF556596197DE53D007E6F5F /* RootViewController.m */; };
-		DF55659A197DE619007E6F5F /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF556599197DE619007E6F5F /* CircleView.m */; };
-		DF55659D197DE627007E6F5F /* TrailView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF55659C197DE627007E6F5F /* TrailView.m */; };
+		DF55659A197DE619007E6F5F /* CircleView.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF556599197DE619007E6F5F /* CircleView.mm */; };
+		DF55659D197DE627007E6F5F /* TrailView.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF55659C197DE627007E6F5F /* TrailView.mm */; };
+		DF63135C198D7DD00010FD3D /* CircleImageView.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF63135B198D7DD00010FD3D /* CircleImageView.mm */; };
 		DF650D97197DE45A00B55E55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF650D96197DE45A00B55E55 /* Foundation.framework */; };
 		DF650D99197DE45A00B55E55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF650D98197DE45A00B55E55 /* CoreGraphics.framework */; };
 		DF650D9B197DE45A00B55E55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF650D9A197DE45A00B55E55 /* UIKit.framework */; };
 		DF650DA1197DE45A00B55E55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF650D9F197DE45A00B55E55 /* InfoPlist.strings */; };
 		DF650DA3197DE45A00B55E55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF650DA2197DE45A00B55E55 /* main.m */; };
-		DF650DA7197DE45A00B55E55 /* CoasterAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF650DA6197DE45A00B55E55 /* CoasterAppDelegate.m */; };
+		DF650DA7197DE45A00B55E55 /* CoasterAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF650DA6197DE45A00B55E55 /* CoasterAppDelegate.mm */; };
 		DF650DA9197DE45A00B55E55 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF650DA8197DE45A00B55E55 /* Images.xcassets */; };
 		DF650DB0197DE45A00B55E55 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF650DAF197DE45A00B55E55 /* XCTest.framework */; };
 		DF650DB1197DE45A00B55E55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF650D96197DE45A00B55E55 /* Foundation.framework */; };
@@ -23,7 +25,25 @@
 		DF650DBA197DE45A00B55E55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF650DB8197DE45A00B55E55 /* InfoPlist.strings */; };
 		DF650DBC197DE45A00B55E55 /* CoasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF650DBB197DE45A00B55E55 /* CoasterTests.m */; };
 		DFAEA314197F46D5003FA439 /* CGUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = DFAEA313197F46D5003FA439 /* CGUtil.mm */; };
-		DFAEA317197F675B003FA439 /* CenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAEA316197F675B003FA439 /* CenterView.m */; };
+		DFAEA317197F675B003FA439 /* CenterView.mm in Sources */ = {isa = PBXBuildFile; fileRef = DFAEA316197F675B003FA439 /* CenterView.mm */; };
+		DFB19B8319872C7800C12DA3 /* CornerButton.mm in Sources */ = {isa = PBXBuildFile; fileRef = DFB19B8219872C7800C12DA3 /* CornerButton.mm */; };
+		DFB19B861987312200C12DA3 /* ExtraScrollView.mm in Sources */ = {isa = PBXBuildFile; fileRef = DFB19B851987312200C12DA3 /* ExtraScrollView.mm */; };
+		DFB19B9619873AE500C12DA3 /* user0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFB19B8819873AE500C12DA3 /* user0.jpg */; };
+		DFB19B9719873AE500C12DA3 /* user1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFB19B8919873AE500C12DA3 /* user1.jpg */; };
+		DFB19B9819873AE500C12DA3 /* user2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFB19B8A19873AE500C12DA3 /* user2.jpg */; };
+		DFB19B9919873AE500C12DA3 /* user3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFB19B8B19873AE500C12DA3 /* user3.jpg */; };
+		DFB19B9A19873AE500C12DA3 /* user4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFB19B8C19873AE500C12DA3 /* user4.jpg */; };
+		DFB19B9B19873AE500C12DA3 /* user5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFB19B8D19873AE500C12DA3 /* user5.jpg */; };
+		DFB19B9C19873AE500C12DA3 /* user6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFB19B8E19873AE500C12DA3 /* user6.jpg */; };
+		DFB19B9D19873AE500C12DA3 /* user7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFB19B8F19873AE500C12DA3 /* user7.jpg */; };
+		DFB19B9E19873AE500C12DA3 /* user8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFB19B9019873AE500C12DA3 /* user8.jpg */; };
+		DFB19B9F19873AE500C12DA3 /* user9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFB19B9119873AE500C12DA3 /* user9.jpg */; };
+		DFB19BA019873AE500C12DA3 /* user10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFB19B9219873AE500C12DA3 /* user10.jpg */; };
+		DFB19BA119873AE500C12DA3 /* user11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFB19B9319873AE500C12DA3 /* user11.jpg */; };
+		DFB19BA219873AE500C12DA3 /* user12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFB19B9419873AE500C12DA3 /* user12.jpg */; };
+		DFB19BA319873AE500C12DA3 /* user13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFB19B9519873AE500C12DA3 /* user13.jpg */; };
+		DFC3003E1982BF4C00EC1D75 /* User.mm in Sources */ = {isa = PBXBuildFile; fileRef = DFC3003D1982BF4C00EC1D75 /* User.mm */; };
+		DFC300421982BFC000EC1D75 /* UIColor+Stylesheet.mm in Sources */ = {isa = PBXBuildFile; fileRef = DFC300411982BFC000EC1D75 /* UIColor+Stylesheet.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,12 +57,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF46F099198884DC0015269A /* UserList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserList.h; sourceTree = "<group>"; };
+		DF46F09A198884DC0015269A /* UserList.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = UserList.mm; path = Coaster/UserList.mm; sourceTree = "<group>"; };
 		DF556595197DE53D007E6F5F /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		DF556596197DE53D007E6F5F /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		DF556598197DE619007E6F5F /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
-		DF556599197DE619007E6F5F /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
+		DF556599197DE619007E6F5F /* CircleView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CircleView.mm; sourceTree = "<group>"; };
 		DF55659B197DE627007E6F5F /* TrailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrailView.h; sourceTree = "<group>"; };
-		DF55659C197DE627007E6F5F /* TrailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrailView.m; sourceTree = "<group>"; };
+		DF55659C197DE627007E6F5F /* TrailView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TrailView.mm; sourceTree = "<group>"; };
+		DF63134B198D3F3F0010FD3D /* project_internal.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project_internal.xcconfig; sourceTree = "<group>"; };
+		DF63134C198D3F550010FD3D /* project_release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project_release.xcconfig; sourceTree = "<group>"; };
+		DF63134D198D3F640010FD3D /* project_debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project_debug.xcconfig; sourceTree = "<group>"; };
+		DF631352198D404B0010FD3D /* target_base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = target_base.xcconfig; sourceTree = "<group>"; };
+		DF631353198D405B0010FD3D /* target_tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = target_tests.xcconfig; sourceTree = "<group>"; };
+		DF631354198D41F10010FD3D /* target_appstore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = target_appstore.xcconfig; sourceTree = "<group>"; };
+		DF631355198D42B60010FD3D /* warnings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = warnings.xcconfig; sourceTree = "<group>"; };
+		DF631356198D42D00010FD3D /* project_base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project_base.xcconfig; sourceTree = "<group>"; };
+		DF631358198D45660010FD3D /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Coaster/Constants.h; sourceTree = "<group>"; };
+		DF631359198D4F080010FD3D /* Types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Types.h; path = Coaster/Types.h; sourceTree = "<group>"; };
+		DF63135A198D7DD00010FD3D /* CircleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleImageView.h; sourceTree = "<group>"; };
+		DF63135B198D7DD00010FD3D /* CircleImageView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CircleImageView.mm; sourceTree = "<group>"; };
 		DF650D93197DE45A00B55E55 /* Coaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF650D96197DE45A00B55E55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DF650D98197DE45A00B55E55 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -52,17 +86,39 @@
 		DF650DA2197DE45A00B55E55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DF650DA4197DE45A00B55E55 /* Coaster-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Coaster-Prefix.pch"; sourceTree = "<group>"; };
 		DF650DA5197DE45A00B55E55 /* CoasterAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoasterAppDelegate.h; sourceTree = "<group>"; };
-		DF650DA6197DE45A00B55E55 /* CoasterAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoasterAppDelegate.m; sourceTree = "<group>"; };
+		DF650DA6197DE45A00B55E55 /* CoasterAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CoasterAppDelegate.mm; sourceTree = "<group>"; };
 		DF650DA8197DE45A00B55E55 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DF650DAE197DE45A00B55E55 /* CoasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF650DAF197DE45A00B55E55 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		DF650DB7197DE45A00B55E55 /* CoasterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoasterTests-Info.plist"; sourceTree = "<group>"; };
 		DF650DB9197DE45A00B55E55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DF650DBB197DE45A00B55E55 /* CoasterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoasterTests.m; sourceTree = "<group>"; };
-		DFAEA312197F46D5003FA439 /* CGUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGUtil.h; path = Coaster/CGUtil.h; sourceTree = "<group>"; };
+		DFAEA312197F46D5003FA439 /* CGUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGUtil.h; sourceTree = "<group>"; };
 		DFAEA313197F46D5003FA439 /* CGUtil.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CGUtil.mm; path = Coaster/CGUtil.mm; sourceTree = "<group>"; };
 		DFAEA315197F675B003FA439 /* CenterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterView.h; sourceTree = "<group>"; };
-		DFAEA316197F675B003FA439 /* CenterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterView.m; sourceTree = "<group>"; };
+		DFAEA316197F675B003FA439 /* CenterView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CenterView.mm; sourceTree = "<group>"; };
+		DFB19B8119872C7800C12DA3 /* CornerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CornerButton.h; sourceTree = "<group>"; };
+		DFB19B8219872C7800C12DA3 /* CornerButton.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CornerButton.mm; sourceTree = "<group>"; };
+		DFB19B841987312200C12DA3 /* ExtraScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtraScrollView.h; sourceTree = "<group>"; };
+		DFB19B851987312200C12DA3 /* ExtraScrollView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ExtraScrollView.mm; sourceTree = "<group>"; };
+		DFB19B8819873AE500C12DA3 /* user0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = user0.jpg; path = Images/user0.jpg; sourceTree = "<group>"; };
+		DFB19B8919873AE500C12DA3 /* user1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = user1.jpg; path = Images/user1.jpg; sourceTree = "<group>"; };
+		DFB19B8A19873AE500C12DA3 /* user2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = user2.jpg; path = Images/user2.jpg; sourceTree = "<group>"; };
+		DFB19B8B19873AE500C12DA3 /* user3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = user3.jpg; path = Images/user3.jpg; sourceTree = "<group>"; };
+		DFB19B8C19873AE500C12DA3 /* user4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = user4.jpg; path = Images/user4.jpg; sourceTree = "<group>"; };
+		DFB19B8D19873AE500C12DA3 /* user5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = user5.jpg; path = Images/user5.jpg; sourceTree = "<group>"; };
+		DFB19B8E19873AE500C12DA3 /* user6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = user6.jpg; path = Images/user6.jpg; sourceTree = "<group>"; };
+		DFB19B8F19873AE500C12DA3 /* user7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = user7.jpg; path = Images/user7.jpg; sourceTree = "<group>"; };
+		DFB19B9019873AE500C12DA3 /* user8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = user8.jpg; path = Images/user8.jpg; sourceTree = "<group>"; };
+		DFB19B9119873AE500C12DA3 /* user9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = user9.jpg; path = Images/user9.jpg; sourceTree = "<group>"; };
+		DFB19B9219873AE500C12DA3 /* user10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = user10.jpg; path = Images/user10.jpg; sourceTree = "<group>"; };
+		DFB19B9319873AE500C12DA3 /* user11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = user11.jpg; path = Images/user11.jpg; sourceTree = "<group>"; };
+		DFB19B9419873AE500C12DA3 /* user12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = user12.jpg; path = Images/user12.jpg; sourceTree = "<group>"; };
+		DFB19B9519873AE500C12DA3 /* user13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = user13.jpg; path = Images/user13.jpg; sourceTree = "<group>"; };
+		DFC3003C1982BF4C00EC1D75 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		DFC3003D1982BF4C00EC1D75 /* User.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = User.mm; path = Coaster/User.mm; sourceTree = "<group>"; };
+		DFC300401982BFC000EC1D75 /* UIColor+Stylesheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Stylesheet.h"; sourceTree = "<group>"; };
+		DFC300411982BFC000EC1D75 /* UIColor+Stylesheet.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIColor+Stylesheet.mm"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +148,12 @@
 		DF55659E197DE639007E6F5F /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				DF63135A198D7DD00010FD3D /* CircleImageView.h */,
+				DFAEA312197F46D5003FA439 /* CGUtil.h */,
+				DF46F099198884DC0015269A /* UserList.h */,
+				DFB19B841987312200C12DA3 /* ExtraScrollView.h */,
+				DFB19B8119872C7800C12DA3 /* CornerButton.h */,
+				DFC3003C1982BF4C00EC1D75 /* User.h */,
 				DFAEA315197F675B003FA439 /* CenterView.h */,
 				DF556598197DE619007E6F5F /* CircleView.h */,
 				DF55659B197DE627007E6F5F /* TrailView.h */,
@@ -100,14 +162,42 @@
 			path = Coaster;
 			sourceTree = "<group>";
 		};
+		DF63134A198D3EFD0010FD3D /* xcconfig */ = {
+			isa = PBXGroup;
+			children = (
+				DF631355198D42B60010FD3D /* warnings.xcconfig */,
+				DF631356198D42D00010FD3D /* project_base.xcconfig */,
+				DF63134C198D3F550010FD3D /* project_release.xcconfig */,
+				DF63134D198D3F640010FD3D /* project_debug.xcconfig */,
+				DF63134B198D3F3F0010FD3D /* project_internal.xcconfig */,
+				DF631352198D404B0010FD3D /* target_base.xcconfig */,
+				DF631353198D405B0010FD3D /* target_tests.xcconfig */,
+				DF631354198D41F10010FD3D /* target_appstore.xcconfig */,
+			);
+			name = xcconfig;
+			sourceTree = "<group>";
+		};
+		DF631357198D45270010FD3D /* Import Headers */ = {
+			isa = PBXGroup;
+			children = (
+				DF631358198D45660010FD3D /* Constants.h */,
+				DF631359198D4F080010FD3D /* Types.h */,
+			);
+			name = "Import Headers";
+			sourceTree = "<group>";
+		};
 		DF650D8A197DE45A00B55E55 = {
 			isa = PBXGroup;
 			children = (
 				DF650D9C197DE45A00B55E55 /* Coaster */,
 				DFA0F265197DE4A100E6B2E6 /* Objects */,
 				DFA0F264197DE49A00E6B2E6 /* Views */,
-				DF55659E197DE639007E6F5F /* Headers */,
+				DFB19B8019872C5900C12DA3 /* Reusable Views */,
+				DFC3003F1982BF9E00EC1D75 /* Categories */,
 				DFAEA311197F46AE003FA439 /* Util */,
+				DF631357198D45270010FD3D /* Import Headers */,
+				DF55659E197DE639007E6F5F /* Headers */,
+				DFB19B871987385A00C12DA3 /* ExampleFiles */,
 				DF650DB5197DE45A00B55E55 /* CoasterTests */,
 				DF650D95197DE45A00B55E55 /* Frameworks */,
 				DF650D94197DE45A00B55E55 /* Products */,
@@ -138,11 +228,12 @@
 			isa = PBXGroup;
 			children = (
 				DF650DA5197DE45A00B55E55 /* CoasterAppDelegate.h */,
-				DF650DA6197DE45A00B55E55 /* CoasterAppDelegate.m */,
+				DF650DA6197DE45A00B55E55 /* CoasterAppDelegate.mm */,
 				DF556595197DE53D007E6F5F /* RootViewController.h */,
 				DF556596197DE53D007E6F5F /* RootViewController.m */,
 				DF650DA8197DE45A00B55E55 /* Images.xcassets */,
 				DF650D9D197DE45A00B55E55 /* Supporting Files */,
+				DF63134A198D3EFD0010FD3D /* xcconfig */,
 			);
 			path = Coaster;
 			sourceTree = "<group>";
@@ -179,9 +270,9 @@
 		DFA0F264197DE49A00E6B2E6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DF55659C197DE627007E6F5F /* TrailView.m */,
-				DFAEA316197F675B003FA439 /* CenterView.m */,
-				DF556599197DE619007E6F5F /* CircleView.m */,
+				DFAEA316197F675B003FA439 /* CenterView.mm */,
+				DF55659C197DE627007E6F5F /* TrailView.mm */,
+				DF556599197DE619007E6F5F /* CircleView.mm */,
 			);
 			name = Views;
 			path = Coaster;
@@ -190,6 +281,8 @@
 		DFA0F265197DE4A100E6B2E6 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				DF46F09A198884DC0015269A /* UserList.mm */,
+				DFC3003D1982BF4C00EC1D75 /* User.mm */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -197,10 +290,52 @@
 		DFAEA311197F46AE003FA439 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				DFAEA312197F46D5003FA439 /* CGUtil.h */,
 				DFAEA313197F46D5003FA439 /* CGUtil.mm */,
 			);
 			name = Util;
+			sourceTree = "<group>";
+		};
+		DFB19B8019872C5900C12DA3 /* Reusable Views */ = {
+			isa = PBXGroup;
+			children = (
+				DFB19B851987312200C12DA3 /* ExtraScrollView.mm */,
+				DFB19B8219872C7800C12DA3 /* CornerButton.mm */,
+				DF63135B198D7DD00010FD3D /* CircleImageView.mm */,
+			);
+			name = "Reusable Views";
+			path = Coaster;
+			sourceTree = "<group>";
+		};
+		DFB19B871987385A00C12DA3 /* ExampleFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DFB19B8819873AE500C12DA3 /* user0.jpg */,
+				DFB19B8919873AE500C12DA3 /* user1.jpg */,
+				DFB19B8A19873AE500C12DA3 /* user2.jpg */,
+				DFB19B8B19873AE500C12DA3 /* user3.jpg */,
+				DFB19B8C19873AE500C12DA3 /* user4.jpg */,
+				DFB19B8D19873AE500C12DA3 /* user5.jpg */,
+				DFB19B8E19873AE500C12DA3 /* user6.jpg */,
+				DFB19B8F19873AE500C12DA3 /* user7.jpg */,
+				DFB19B9019873AE500C12DA3 /* user8.jpg */,
+				DFB19B9119873AE500C12DA3 /* user9.jpg */,
+				DFB19B9219873AE500C12DA3 /* user10.jpg */,
+				DFB19B9319873AE500C12DA3 /* user11.jpg */,
+				DFB19B9419873AE500C12DA3 /* user12.jpg */,
+				DFB19B9519873AE500C12DA3 /* user13.jpg */,
+			);
+			name = ExampleFiles;
+			path = Coaster;
+			sourceTree = "<group>";
+		};
+		DFC3003F1982BF9E00EC1D75 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DFC300401982BFC000EC1D75 /* UIColor+Stylesheet.h */,
+				DFC300411982BFC000EC1D75 /* UIColor+Stylesheet.mm */,
+			);
+			name = Categories;
+			path = Coaster;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,7 +414,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFB19B9F19873AE500C12DA3 /* user9.jpg in Resources */,
+				DFB19BA019873AE500C12DA3 /* user10.jpg in Resources */,
+				DFB19B9919873AE500C12DA3 /* user3.jpg in Resources */,
+				DFB19B9719873AE500C12DA3 /* user1.jpg in Resources */,
+				DFB19B9619873AE500C12DA3 /* user0.jpg in Resources */,
 				DF650DA1197DE45A00B55E55 /* InfoPlist.strings in Resources */,
+				DFB19B9B19873AE500C12DA3 /* user5.jpg in Resources */,
+				DFB19B9819873AE500C12DA3 /* user2.jpg in Resources */,
+				DFB19B9C19873AE500C12DA3 /* user6.jpg in Resources */,
+				DFB19B9E19873AE500C12DA3 /* user8.jpg in Resources */,
+				DFB19BA219873AE500C12DA3 /* user12.jpg in Resources */,
+				DFB19B9A19873AE500C12DA3 /* user4.jpg in Resources */,
+				DFB19BA319873AE500C12DA3 /* user13.jpg in Resources */,
+				DFB19B9D19873AE500C12DA3 /* user7.jpg in Resources */,
+				DFB19BA119873AE500C12DA3 /* user11.jpg in Resources */,
 				DF650DA9197DE45A00B55E55 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,13 +448,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF55659A197DE619007E6F5F /* CircleView.m in Sources */,
-				DF650DA7197DE45A00B55E55 /* CoasterAppDelegate.m in Sources */,
+				DF63135C198D7DD00010FD3D /* CircleImageView.mm in Sources */,
+				DFC3003E1982BF4C00EC1D75 /* User.mm in Sources */,
+				DFB19B861987312200C12DA3 /* ExtraScrollView.mm in Sources */,
+				DF55659A197DE619007E6F5F /* CircleView.mm in Sources */,
+				DFC300421982BFC000EC1D75 /* UIColor+Stylesheet.mm in Sources */,
+				DF650DA7197DE45A00B55E55 /* CoasterAppDelegate.mm in Sources */,
 				DF650DA3197DE45A00B55E55 /* main.m in Sources */,
-				DF55659D197DE627007E6F5F /* TrailView.m in Sources */,
+				DF55659D197DE627007E6F5F /* TrailView.mm in Sources */,
 				DF556597197DE53E007E6F5F /* RootViewController.m in Sources */,
+				DF46F09B198884DC0015269A /* UserList.mm in Sources */,
 				DFAEA314197F46D5003FA439 /* CGUtil.mm in Sources */,
-				DFAEA317197F675B003FA439 /* CenterView.m in Sources */,
+				DFB19B8319872C7800C12DA3 /* CornerButton.mm in Sources */,
+				DFAEA317197F675B003FA439 /* CenterView.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,8 +502,9 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		DF650DBD197DE45A00B55E55 /* Debug */ = {
+		DF63134E198D3F710010FD3D /* Internal */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF63134B198D3F3F0010FD3D /* project_internal.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -379,7 +535,86 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Internal;
+		};
+		DF63134F198D3F710010FD3D /* Internal */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF631352198D404B0010FD3D /* target_base.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Coaster/Coaster-Prefix.pch";
+				INFOPLIST_FILE = "Coaster/Coaster-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Internal;
+		};
+		DF631350198D3F710010FD3D /* Internal */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF631353198D405B0010FD3D /* target_tests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Coaster.app/Coaster";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Coaster/Coaster-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CoasterTests/CoasterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Internal;
+		};
+		DF650DBD197DE45A00B55E55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF63134D198D3F640010FD3D /* project_debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -387,6 +622,7 @@
 		};
 		DF650DBE197DE45A00B55E55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF63134B198D3F3F0010FD3D /* project_internal.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -411,7 +647,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -419,6 +655,7 @@
 		};
 		DF650DC0197DE45A00B55E55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF631352198D404B0010FD3D /* target_base.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -435,6 +672,7 @@
 		};
 		DF650DC1197DE45A00B55E55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF631354198D41F10010FD3D /* target_appstore.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -450,6 +688,7 @@
 		};
 		DF650DC3197DE45A00B55E55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF631353198D405B0010FD3D /* target_tests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Coaster.app/Coaster";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -472,6 +711,7 @@
 		};
 		DF650DC4197DE45A00B55E55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF631353198D405B0010FD3D /* target_tests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Coaster.app/Coaster";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -495,6 +735,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DF650DBD197DE45A00B55E55 /* Debug */,
+				DF63134E198D3F710010FD3D /* Internal */,
 				DF650DBE197DE45A00B55E55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -504,6 +745,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DF650DC0197DE45A00B55E55 /* Debug */,
+				DF63134F198D3F710010FD3D /* Internal */,
 				DF650DC1197DE45A00B55E55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -513,6 +755,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DF650DC3197DE45A00B55E55 /* Debug */,
+				DF631350198D3F710010FD3D /* Internal */,
 				DF650DC4197DE45A00B55E55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

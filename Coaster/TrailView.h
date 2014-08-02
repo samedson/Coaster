@@ -8,6 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
+#import "CenterView.h"
+
+// -----------------------------------------------------------------------------
+
+@class CornerButton;
+
+// -----------------------------------------------------------------------------
+
 @interface TrailView : UIView
+
+@property (nonatomic, strong) CenterView *centerView;
+
+- (void)reloadColors;
+
+- (NSMutableArray *)getCircleViews;
+- (CornerButton *)getLeftCornerButton;
+- (CornerButton *)getRightCornerButton;
 
 @end
