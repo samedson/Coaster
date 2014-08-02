@@ -10,7 +10,7 @@
 #define Coaster_Constants_h
 
 // Cells
-static const CGFloat kCellRadius = 26;
+static const CGFloat kCellRadius = 28;
 static const NSInteger kCellsPerPage = 26;
 static const NSInteger kNumberOfCells = kCellsPerPage + 2;
 static const NSInteger kPageSize = (2 * kCellRadius * kNumberOfCells - 3);
