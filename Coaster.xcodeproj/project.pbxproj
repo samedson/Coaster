@@ -44,6 +44,18 @@
 		DFB19BA319873AE500C12DA3 /* user13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFB19B9519873AE500C12DA3 /* user13.jpg */; };
 		DFC3003E1982BF4C00EC1D75 /* User.mm in Sources */ = {isa = PBXBuildFile; fileRef = DFC3003D1982BF4C00EC1D75 /* User.mm */; };
 		DFC300421982BFC000EC1D75 /* UIColor+Stylesheet.mm in Sources */ = {isa = PBXBuildFile; fileRef = DFC300411982BFC000EC1D75 /* UIColor+Stylesheet.mm */; };
+		DFD3DC20198F0792009AF5F5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD3DC1F198F0792009AF5F5 /* Parse.framework */; };
+		DFD3DC22198F0918009AF5F5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD3DC21198F0918009AF5F5 /* AudioToolbox.framework */; };
+		DFD3DC24198F091D009AF5F5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD3DC23198F091D009AF5F5 /* CFNetwork.framework */; };
+		DFD3DC26198F0925009AF5F5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD3DC25198F0925009AF5F5 /* CoreLocation.framework */; };
+		DFD3DC28198F092D009AF5F5 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD3DC27198F092D009AF5F5 /* libz.dylib */; };
+		DFD3DC2A198F0934009AF5F5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD3DC29198F0934009AF5F5 /* MobileCoreServices.framework */; };
+		DFD3DC2C198F0941009AF5F5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD3DC2B198F0941009AF5F5 /* QuartzCore.framework */; };
+		DFD3DC2E198F0947009AF5F5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD3DC2D198F0947009AF5F5 /* Security.framework */; };
+		DFD3DC30198F094B009AF5F5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD3DC2F198F094B009AF5F5 /* StoreKit.framework */; };
+		DFD3DC32198F0952009AF5F5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD3DC31198F0952009AF5F5 /* SystemConfiguration.framework */; };
+		DFEDF88A198EDF3A00217A0C /* WebUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = DFEDF889198EDF3A00217A0C /* WebUtil.mm */; };
+		DFEDF88D198EE12E00217A0C /* Client.mm in Sources */ = {isa = PBXBuildFile; fileRef = DFEDF88C198EE12E00217A0C /* Client.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +131,20 @@
 		DFC3003D1982BF4C00EC1D75 /* User.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = User.mm; path = Coaster/User.mm; sourceTree = "<group>"; };
 		DFC300401982BFC000EC1D75 /* UIColor+Stylesheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Stylesheet.h"; sourceTree = "<group>"; };
 		DFC300411982BFC000EC1D75 /* UIColor+Stylesheet.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIColor+Stylesheet.mm"; sourceTree = "<group>"; };
+		DFD3DC1F198F0792009AF5F5 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = frameworks/Parse.framework; sourceTree = "<group>"; };
+		DFD3DC21198F0918009AF5F5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		DFD3DC23198F091D009AF5F5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		DFD3DC25198F0925009AF5F5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DFD3DC27198F092D009AF5F5 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		DFD3DC29198F0934009AF5F5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		DFD3DC2B198F0941009AF5F5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DFD3DC2D198F0947009AF5F5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DFD3DC2F198F094B009AF5F5 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		DFD3DC31198F0952009AF5F5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DFEDF888198EDF3A00217A0C /* WebUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebUtil.h; sourceTree = "<group>"; };
+		DFEDF889198EDF3A00217A0C /* WebUtil.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = WebUtil.mm; path = Coaster/WebUtil.mm; sourceTree = "<group>"; };
+		DFEDF88B198EE12E00217A0C /* Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Client.h; path = Coaster/Client.h; sourceTree = "<group>"; };
+		DFEDF88C198EE12E00217A0C /* Client.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Client.mm; path = Coaster/Client.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +152,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFD3DC32198F0952009AF5F5 /* SystemConfiguration.framework in Frameworks */,
+				DFD3DC30198F094B009AF5F5 /* StoreKit.framework in Frameworks */,
+				DFD3DC2E198F0947009AF5F5 /* Security.framework in Frameworks */,
+				DFD3DC2C198F0941009AF5F5 /* QuartzCore.framework in Frameworks */,
+				DFD3DC2A198F0934009AF5F5 /* MobileCoreServices.framework in Frameworks */,
+				DFD3DC28198F092D009AF5F5 /* libz.dylib in Frameworks */,
+				DFD3DC26198F0925009AF5F5 /* CoreLocation.framework in Frameworks */,
+				DFD3DC24198F091D009AF5F5 /* CFNetwork.framework in Frameworks */,
+				DFD3DC22198F0918009AF5F5 /* AudioToolbox.framework in Frameworks */,
+				DFD3DC20198F0792009AF5F5 /* Parse.framework in Frameworks */,
 				DF650D99197DE45A00B55E55 /* CoreGraphics.framework in Frameworks */,
 				DF650D9B197DE45A00B55E55 /* UIKit.framework in Frameworks */,
 				DF650D97197DE45A00B55E55 /* Foundation.framework in Frameworks */,
@@ -148,6 +184,7 @@
 		DF55659E197DE639007E6F5F /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				DFEDF888198EDF3A00217A0C /* WebUtil.h */,
 				DF63135A198D7DD00010FD3D /* CircleImageView.h */,
 				DFAEA312197F46D5003FA439 /* CGUtil.h */,
 				DF46F099198884DC0015269A /* UserList.h */,
@@ -182,6 +219,7 @@
 			children = (
 				DF631358198D45660010FD3D /* Constants.h */,
 				DF631359198D4F080010FD3D /* Types.h */,
+				DFEDF88B198EE12E00217A0C /* Client.h */,
 			);
 			name = "Import Headers";
 			sourceTree = "<group>";
@@ -216,6 +254,16 @@
 		DF650D95197DE45A00B55E55 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DFD3DC1F198F0792009AF5F5 /* Parse.framework */,
+				DFD3DC31198F0952009AF5F5 /* SystemConfiguration.framework */,
+				DFD3DC2F198F094B009AF5F5 /* StoreKit.framework */,
+				DFD3DC2D198F0947009AF5F5 /* Security.framework */,
+				DFD3DC2B198F0941009AF5F5 /* QuartzCore.framework */,
+				DFD3DC29198F0934009AF5F5 /* MobileCoreServices.framework */,
+				DFD3DC27198F092D009AF5F5 /* libz.dylib */,
+				DFD3DC25198F0925009AF5F5 /* CoreLocation.framework */,
+				DFD3DC23198F091D009AF5F5 /* CFNetwork.framework */,
+				DFD3DC21198F0918009AF5F5 /* AudioToolbox.framework */,
 				DF650D96197DE45A00B55E55 /* Foundation.framework */,
 				DF650D98197DE45A00B55E55 /* CoreGraphics.framework */,
 				DF650D9A197DE45A00B55E55 /* UIKit.framework */,
@@ -281,6 +329,7 @@
 		DFA0F265197DE4A100E6B2E6 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				DFEDF88C198EE12E00217A0C /* Client.mm */,
 				DF46F09A198884DC0015269A /* UserList.mm */,
 				DFC3003D1982BF4C00EC1D75 /* User.mm */,
 			);
@@ -291,6 +340,7 @@
 			isa = PBXGroup;
 			children = (
 				DFAEA313197F46D5003FA439 /* CGUtil.mm */,
+				DFEDF889198EDF3A00217A0C /* WebUtil.mm */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -458,9 +508,11 @@
 				DF55659D197DE627007E6F5F /* TrailView.mm in Sources */,
 				DF556597197DE53E007E6F5F /* RootViewController.m in Sources */,
 				DF46F09B198884DC0015269A /* UserList.mm in Sources */,
+				DFEDF88A198EDF3A00217A0C /* WebUtil.mm in Sources */,
 				DFAEA314197F46D5003FA439 /* CGUtil.mm in Sources */,
 				DFB19B8319872C7800C12DA3 /* CornerButton.mm in Sources */,
 				DFAEA317197F675B003FA439 /* CenterView.mm in Sources */,
+				DFEDF88D198EE12E00217A0C /* Client.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,6 +600,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Coaster/Coaster-Prefix.pch";
 				INFOPLIST_FILE = "Coaster/Coaster-Info.plist";
@@ -660,6 +716,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Coaster/Coaster-Prefix.pch";
 				INFOPLIST_FILE = "Coaster/Coaster-Info.plist";
@@ -677,6 +737,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Coaster/Coaster-Prefix.pch";
 				INFOPLIST_FILE = "Coaster/Coaster-Info.plist";

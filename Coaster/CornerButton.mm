@@ -10,6 +10,7 @@
 
 #import "UIColor+Stylesheet.h"
 
+#import "Client.h"
 #import "UserList.h"
 
 // -----------------------------------------------------------------------------
@@ -46,8 +47,12 @@
 }
 
 - (void)handleTap {
-  globalUserList->setCurrentUserColor([UIColor randomColor]);
-  [self.parent reloadColors];
+  if (self.leftCorner) {
+    globalUserList->setCurrentUserColor([UIColor randomColor]);
+    [self.parent reloadColors];
+  } else {
+    [globalClient getTest];
+  }
 }
 
 - (void)setFillColorNew:(UIColor *)newFillColor {
