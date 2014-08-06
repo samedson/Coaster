@@ -35,8 +35,8 @@
 // -----------------------------------------------------------------------------
 
 // Cell Positioning
-static const CGFloat kLeftOffset = -92;
-static const CGFloat kRightOffset = 800;
+static const CGFloat kLeftOffset = -109;
+static const CGFloat kRightOffset = 806;
 static const CGFloat kWeirdCircleSizeShift = kCellRadius - 20;
 static const CGFloat kCellStartOffset = kContentSize / 2;
 
@@ -44,7 +44,7 @@ static const CGFloat kCellStartOffset = kContentSize / 2;
 static const CGFloat kScrollViewDecelerationRate = UIScrollViewDecelerationRateFast;
 
 // Corner Buttons
-static const CGFloat kCornerButtonSize = 2 * kCellRadius;
+static const CGFloat kCornerButtonSize = 2 * kCellRadius - 7;
 
 // -----------------------------------------------------------------------------
 
@@ -364,16 +364,9 @@ static const CGFloat kCornerButtonSize = 2 * kCellRadius;
       break;
     }
     case CircleViewTrailModeBottomRight: {
-      CGFloat yScreen = yCircle - yScroll;
-      CGFloat yBottom = yMax + yScroll + 4;
-      CGFloat yChange = 44.5 - (kModeCutoffBottomRight_RightY - yScreen);
-      CGFloat cornerRadius = 15;
-      printlog2 NSLog(@"%f", yScreen);
-      printlog2 NSLog(@"%f", yChange);
-      printlog2 NSLog(@"%f", sqrt(abs(cornerRadius - pow(yChange, 2))));
       circle.frame = CGRectMove(circleFrame,
                                 -1 * yScroll + (yCircle - self.frame.size.height),
-                                yBottom - sqrt(abs(cornerRadius - pow(yChange, 2))));
+                                2 * yScroll + (yMax - yCircle) + kRightOffset);
       //      circle.backgroundColor = [UIColor colorWithRed:0 green:1 blue:1 alpha:0.5];
       break;
     }

@@ -19,9 +19,9 @@ static const NSInteger kContentSize = LONG_MAX / 10000; // 922,337,203,685,477
 // Deciding which mode
 static const NSInteger kModeCutoffLeft_RightY = 0;
 static const NSInteger kModeCutoffBottomLeft_LeftY = 570;
-static const NSInteger kModeCutoffBottomLeft_BottomX = 24;
+static const NSInteger kModeCutoffBottomLeft_BottomX = 32;
 static const NSInteger kModeCutoffBottomRight_BottomX = 232;
-static const NSInteger kModeCutoffBottomRight_RightY = 840;
+static const NSInteger kModeCutoffBottomRight_RightY = 830;
 static const NSInteger kModeCutoffRight_LeftY = 1350;
 
 // Borders

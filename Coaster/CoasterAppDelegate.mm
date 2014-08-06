@@ -19,12 +19,24 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  // --- Parse ---------------------------------------------------------------------
   [Parse setApplicationId:@"nC5B3OPfZguNWzcim7JflXZddZLjfpxveGkyjr3q"
                 clientKey:@"bFIkwOc84tyU2ffdssw6m6mdY4f1dreadyyCF72A"];
   PFACL *defaultACL = [PFACL ACL];
   [defaultACL setPublicReadAccess:YES];
   [PFACL setDefaultACL:defaultACL withAccessForCurrentUser:YES];
+  // --- Parse ---------------------------------------------------------------------
+
+  globalUserList = new UserList();
+  globalClient = [Client client];
   
+  self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+  // Override point for customization after application launch.
+  self.window.backgroundColor = [UIColor whiteColor];
+  self.window.rootViewController = [[RootViewController alloc] init];
+  [self.window makeKeyAndVisible];
+  
+  // --- Parse ---------------------------------------------------------------------
   if (application.applicationState != UIApplicationStateBackground) {
     // Track an app open here if we launch with a push, unless
     // "content_available" was used to trigger a background push (introduced
@@ -38,17 +50,10 @@
     }
   }
   [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge |
-                                                  UIRemoteNotificationTypeAlert |
-                                                  UIRemoteNotificationTypeSound];
+   UIRemoteNotificationTypeAlert |
+   UIRemoteNotificationTypeSound];
+  // --- Parse ---------------------------------------------------------------------
   
-  globalUserList = new UserList();
-  globalClient = [Client client];
-  
-  self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-  // Override point for customization after application launch.
-  self.window.backgroundColor = [UIColor whiteColor];
-  self.window.rootViewController = [[RootViewController alloc] init];
-  [self.window makeKeyAndVisible];
   return YES;
 }
 
@@ -63,26 +68,32 @@
 }
 
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+  // --- Parse ---------------------------------------------------------------------
   if (error.code == 3010) {
     NSLog(@"Push notifications are not supported in the iOS Simulator.");
   } else {
     // show some alert or otherwise handle the failure to register.
     NSLog(@"application:didFailToRegisterForRemoteNotificationsWithError: %@", error);
 	}
+  // --- Parse ---------------------------------------------------------------------
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+  // --- Parse ---------------------------------------------------------------------
   [PFPush handlePush:userInfo];
   
   if (application.applicationState == UIApplicationStateInactive) {
     [PFAnalytics trackAppOpenedWithRemoteNotificationPayload:userInfo];
   }
+  // --- Parse ---------------------------------------------------------------------
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+  // --- Parse ---------------------------------------------------------------------
   if (application.applicationState == UIApplicationStateInactive) {
     [PFAnalytics trackAppOpenedWithRemoteNotificationPayload:userInfo];
   }
+  // --- Parse ---------------------------------------------------------------------
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -114,12 +125,14 @@
 
 #pragma mark - Parse
 
+// --- Parse ---------------------------------------------------------------------
 - (void)subscribeFinished:(NSNumber *)result error:(NSError *)error {
   if ([result boolValue]) {
-    NSLog(@"ParseStarterProject successfully subscribed to push notifications on the broadcast channel.");
+    // It works
   } else {
-    NSLog(@"ParseStarterProject failed to subscribe to push notifications on the broadcast channel.");
+    NSLog(@"Failed to subscribe to push notifications on the broadcast channel.");
   }
 }
+// --- Parse ---------------------------------------------------------------------
 
 @end
