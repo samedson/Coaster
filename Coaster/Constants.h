@@ -14,14 +14,15 @@ static const CGFloat kCellRadius = 28;
 static const NSInteger kCellsPerPage = 26;
 static const NSInteger kNumberOfCells = kCellsPerPage + 2;
 static const NSInteger kPageSize = (2 * kCellRadius * kNumberOfCells - 3);
-static const NSInteger kContentSize = LONG_MAX / 10000; // 922,337,203,685,477
+// 922,337,203,685,477, ~76886037 miles, ~3087.5 times around Earth
+static const NSInteger kContentSize = LONG_MAX / 10000;
 
 // Deciding which mode
 static const NSInteger kModeCutoffLeft_RightY = 0;
-static const NSInteger kModeCutoffBottomLeft_LeftY = 570;
-static const NSInteger kModeCutoffBottomLeft_BottomX = 32;
-static const NSInteger kModeCutoffBottomRight_BottomX = 232;
-static const NSInteger kModeCutoffBottomRight_RightY = 830;
+static const NSInteger kModeCutoffBottomLeft_LeftY = 568;
+static const NSInteger kModeCutoffBottomLeft_BottomX = 33;
+static const NSInteger kModeCutoffBottomRight_BottomX = 231;
+static const NSInteger kModeCutoffBottomRight_RightY = 832;
 static const NSInteger kModeCutoffRight_LeftY = 1350;
 
 // Borders

@@ -36,7 +36,7 @@
 
 // Cell Positioning
 static const CGFloat kLeftOffset = -109;
-static const CGFloat kRightOffset = 806;
+static const CGFloat kRightOffset = 807;
 static const CGFloat kWeirdCircleSizeShift = kCellRadius - 20;
 static const CGFloat kCellStartOffset = kContentSize / 2;
 
@@ -346,35 +346,30 @@ static const CGFloat kCornerButtonSize = 2 * kCellRadius - 7;
       circle.frame = CGRectMove(circleFrame,
                                 0,
                                 yCircle + kLeftOffset);
-//      circle.backgroundColor = [UIColor colorWithRed:0 green:1 blue:0 alpha:0.5];
       break;
     }
     case CircleViewTrailModeBottomLeft: {
       circle.frame = CGRectMove(circleFrame,
                                 -1 * yScroll + (yCircle - self.frame.size.height),
                                 yCircle + kLeftOffset);
-//      circle.backgroundColor = [UIColor colorWithRed:1 green:0 blue:1 alpha:0.5];
       break;
     }
     case CircleViewTrailModeBottom: {
       circle.frame = CGRectMove(circleFrame,
                                 -1 * yScroll + (yCircle - self.frame.size.height),
                                 yMax + yScroll + kWeirdCircleSizeShift);
-      //      circle.backgroundColor = [UIColor colorWithRed:1 green:0 blue:0 alpha:0.5];
       break;
     }
     case CircleViewTrailModeBottomRight: {
       circle.frame = CGRectMove(circleFrame,
                                 -1 * yScroll + (yCircle - self.frame.size.height),
                                 2 * yScroll + (yMax - yCircle) + kRightOffset);
-      //      circle.backgroundColor = [UIColor colorWithRed:0 green:1 blue:1 alpha:0.5];
       break;
     }
     case CircleViewTrailModeRight: {
       circle.frame = CGRectMove(circleFrame,
                                 xRight,
                                 2 * yScroll + (yMax - yCircle) + kRightOffset);
-//      circle.backgroundColor = [UIColor colorWithRed:0 green:0 blue:1 alpha:0.5];
       break;
     }
     default:
